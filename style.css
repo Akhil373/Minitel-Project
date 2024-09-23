@@ -1,0 +1,148 @@
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1, h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #1e3799;
+}
+h1 {
+    border-bottom: 2px solid #1e3799;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.minitel-img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+.tricolor-bar {
+    height: 5px;
+    background: linear-gradient(to right, #002395 33.33%, #fff 33.33%, #fff 66.66%, #ED2939 66.66%);
+    margin-bottom: 20px;
+}
+.key-facts {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 4px solid #1e3799;
+}
+a {
+    color: #1e3799;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/* body {
+	background: #aaa;
+	display: flex;
+	height: 100vh;
+	font-size: 1.5em;
+} */
+
+.quote {
+	position: relative;
+	width: 600px;
+	margin: auto;
+	padding: 1rem;
+	background-color: transparent;
+	background-image: linear-gradient(
+			-45deg,
+			transparent,
+			transparent 2%,
+			white 2%,
+			white 85%,
+			transparent 85%,
+			transparent
+		),
+		linear-gradient(to bottom right, #2ad, #2ad 90%, transparent 90%);
+	background-position: top left, 0.2em 0.2em;
+	background-repeat: no-repeat;
+	filter: drop-shadow(0 0 15px #0005);
+}
+
+.quote::before,
+.quote::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	width: 3rem;
+	height: 4rem;
+	content: "";
+	z-index: 0;
+	font-size: 8rem;
+	font-family: Georgia, Times, Garamond, serif;
+}
+
+.quote::before {
+	top: -2rem;
+	left: 1rem;
+	content: open-quote;
+}
+
+.quote::after {
+	bottom: -1rem;
+	right: 1rem;
+	content: close-quote;
+}
+
+.quote::before,
+.quote::after,
+.quote h2 {
+	text-shadow: -2px 2px #fff, -1.5px 1.5px #fff, -1px 1px #fff, -0.5px 0.5px #fff;
+}
+
+h2 {
+	margin-block-end: 1rem;
+}
+
+p {
+	margin-block-start: 1rem;
+	text-indent: 2ch;
+}
